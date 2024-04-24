@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+</head>
+<body>
+    <div id="main-container" class="h-screen flex justify-center items-center bg-yellow-100">
+
+
+        <div id="container" class=" w-2/5 h-3/5 shadow-2xl  shadow-black rounded-3xl ">
+
+
+
+            <div id="heading" class="h-1/5 flex justify-center items-center">
+                <p class="font-bold font-mono text-lg sm:text-2xl lg:text-4xl" >Currency Converter</p>
+            </div>
+
+            <div  class="h-1/5">
+                <div id="label" class="h-1/2 flex justify-center items-center">
+                    <label class="text-black lg:text-xl">Amount</label>
+                </div>
+                <div class="h-1/2 flex justify-center items-center">
+                    <input id="amount" type="text" placeholder="Enter Amount" class="h-4/5 w-3/5 text-center rounded-lg " >
+                </div>   
+            </div>
+
+            <div id="main-area" class="h-2/5 flex">
+                <div id="from" class="w-1/2 h-full">
+                    <p id="result-from" class=" mr-2 h-1/5 flex justify-end items-end"></p>
+                    <div id="flag-area" class="w-full h-4/5 flex">
+                        <div id="flag" class="w-1/2 flex items-center justify-center">
+                            <img src="https://flagsapi.com/US/flat/64.png" id="img1" class="h-1/2 w-3/5">
+                        </div>
+                        <div id="currency-area" class="w-1/2 flex justify-start items-center">
+                            <select  name="from" id="dropdown" class="w-3/5"></select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="to" class="w-1/2 h-full">
+                    <p id="result-to" class="h-1/5 flex justify-start items-end"></p>
+                    <div id="flag-area" class="w-full h-4/5 flex">
+                        <div id="flag" class="w-1/2 flex items-center justify-center">
+                            <img src="https://flagsapi.com/PK/flat/64.png" id="img2" class="h-1/2 w-3/5">
+                        </div>
+                        <div id="currency-area" class="w-1/2 flex justify-start items-center">
+                            <select name="to" id="dropdown" class="w-3/5 "></select>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div id="end" class="h-1/5 flex justify-center items-center ">
+                <button id="btn" class="h-3/5 w-2/5 rounded-lg delay-100 duration-100 hover:font-bold hover:cursor-pointer hover:bg-yellow-200 bg-yellow-100">Get Exchange Rate</button>
+            </div>
+
+         
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
