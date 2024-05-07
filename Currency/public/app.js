@@ -25,8 +25,7 @@ for (select of dropdown){
 
 
 let from = dropdown[0].value;
-let to = dropdown[1].value
-
+let to = dropdown[1].value;
 
 
 

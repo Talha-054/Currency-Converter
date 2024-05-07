@@ -9,56 +9,61 @@
     
 </head>
 <body>
-    <div id="main-container" class="h-screen flex justify-center items-center bg-yellow-100">
+    <div id="main-container" class="h-screen  flex justify-center items-center">
+
+        <img src="./currencyBg.jpg" class="h-full absolute w-full">
 
 
-        <div id="container" class=" w-2/5 h-3/5 shadow-2xl  shadow-black rounded-3xl ">
 
-
+        <div id="container" class=" w-full h-3/5 z-10 backdrop-blur-sm  ">
 
             <div id="heading" class="h-1/5 flex justify-center items-center">
-                <p class="font-bold font-mono text-lg sm:text-2xl lg:text-4xl" >Currency Converter</p>
+                <p class="font-extrabold text-[#8576FF] font-mono text-lg sm:text-2xl lg:text-4xl" >Currency Converter</p>
             </div>
 
             <div  class="h-1/5">
                 <div id="label" class="h-1/2 flex justify-center items-center">
-                    <label class="text-black lg:text-xl">Amount</label>
+                    <label class="text-[#FFD23F] lg:text-xl">Amount</label>
                 </div>
                 <div class="h-1/2 flex justify-center items-center">
-                    <input id="amount" type="text" placeholder="Enter Amount" class="h-4/5 w-3/5 text-center rounded-lg " >
+                    <input id="amount" type="text" placeholder="Enter Amount" class="h-4/5 bg-[#A3FFD6]  w-3/5 text-center rounded-lg " >
                 </div>   
             </div>
 
             <div id="main-area" class="h-2/5 flex">
                 <div id="from" class="w-1/2 h-full">
-                    <p id="result-from" class=" mr-2 h-1/5 flex justify-end items-end"></p>
+                    <p id="result-from" class=" mr-2 h-1/5 flex justify-end font-extrabold items-end"></p>
                     <div id="flag-area" class="w-full h-4/5 flex">
                         <div id="flag" class="w-1/2 flex items-center justify-center">
-                            <img src="https://flagsapi.com/US/flat/64.png" id="img1" class="h-1/2 w-3/5">
+                            <img src="https://flagsapi.com/US/flat/64.png" id="img1" class="h-1/2 ml-1 aspect-square">
                         </div>
                         <div id="currency-area" class="w-1/2 flex justify-start items-center">
-                            <select  name="from" id="dropdown" class="w-3/5"></select>
+                            <select  name="from" id="dropdown" class="w-3/5 bg-[#E4F1FF] sm:w-1/4 lg:w-1/6"></select>
                         </div>
                     </div>
                 </div>
                 
                 <div id="to" class="w-1/2 h-full">
-                    <p id="result-to" class="h-1/5 flex justify-start items-end"></p>
+                    <p id="result-to" class="h-1/5 font-extrabold flex justify-start items-end"></p>
                     <div id="flag-area" class="w-full h-4/5 flex">
-                        <div id="flag" class="w-1/2 flex items-center justify-center">
-                            <img src="https://flagsapi.com/PK/flat/64.png" id="img2" class="h-1/2 w-3/5">
+                        <div id="flag" class="w-1/2 flex items-center justify-center backdrop-blur-sm">
+                            <img src="https://flagsapi.com/PK/flat/64.png" id="img2" class="h-1/2  aspect-square">
                         </div>
                         <div id="currency-area" class="w-1/2 flex justify-start items-center">
-                            <select name="to" id="dropdown" class="w-3/5 "></select>
+                            <select name="to" id="dropdown" class="w-3/5 sm:w-1/4 bg-[#E4F1FF] lg:w-1/6 "></select>
                         </div>
                     </div>    
                 </div>
             </div>
 
             <div id="end" class="h-1/5 flex justify-center items-center ">
-                <button id="btn" class="h-3/5 w-2/5 rounded-lg delay-100 duration-100 hover:font-bold hover:cursor-pointer hover:bg-yellow-200 bg-yellow-100">Get Exchange Rate</button>
+                <button id="btn" class="h-3/5 w-2/5 text-[#D7BBF5] font-extrabold rounded-lg delay-100 duration-75 hover:scale-110 hover:cursor-pointer
+                ">Get Exchange Rate</button>
             </div>
 
+
+
+           
          
 
 
